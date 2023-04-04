@@ -7,13 +7,13 @@ public:
 	//ATRIBUTES
 	sf::Vector2f Velocity;
 	sf::Vector2f Position;
-	float Acceleration;
+	sf::Vector2f Acceleration;
 
 	//METHODS
 	Particle();
-	void update();
+	void update(const sf::RenderWindow&);
 	void draw(sf::RenderWindow&);
 	bool isOutOfBounds(const sf::RenderWindow&);
-	void reset(const sf::RenderWindow&,sf::Vector2f,float);
+	void reset(const sf::RenderWindow&,sf::Vector2f,sf::Vector2f);
 
 };
