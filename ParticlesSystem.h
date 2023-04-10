@@ -8,4 +8,6 @@ public:
 
 	ParticlesSystem();
 	ParticlesSystem(std::vector<Particle>);
+	void update(const sf::RenderWindow&, float);
+	void draw(sf::RenderWindow&);
 };
