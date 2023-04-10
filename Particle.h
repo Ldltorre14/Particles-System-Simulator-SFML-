@@ -8,12 +8,13 @@ public:
 	sf::Vector2f Velocity;
 	sf::Vector2f Position;
 	sf::Vector2f Acceleration;
+	float mass;
 
 	//METHODS
 	Particle();
-	void update(const sf::RenderWindow&);
+	void update(const sf::RenderWindow&, float);
 	void draw(sf::RenderWindow&);
 	bool isOutOfBounds(const sf::RenderWindow&);
-	void reset(const sf::RenderWindow&,sf::Vector2f,sf::Vector2f);
+	void reset(const sf::RenderWindow&,sf::Vector2f,sf::Vector2f, float);
 
 };
